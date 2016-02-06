@@ -1,7 +1,28 @@
-ln -s ~/.dotfiles/bashrc ~/.bashrc
-ln -s ~/.dotfiles/Xresources ~/.Xresources
-ln -s ~/.dotfiles/xinitrc ~/.xinitrc
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-ln -s ~/.dotfiles/vim ~/.vim
-if [ ! -d ~/.config ]; then mkdir ~/.config; fi
-ln -s ~/.dotfiles/config/i3 ~/.config/i3
+FILESPATH=$HOME.dotfiles
+USERPATH=`realpath $HOME`
+
+
+# Backup files on first run
+if [ ! -d $FILESPATH/backup ]; 
+then 
+	mkdir $FILESPATH/backup
+	if [ -f $USERPATH/.bashrc ]; then mv $USERPATH/.bashrc $FILESPATH/backup/; fi
+	if [ -f $USERPATH/.Xresources ]; then mv $USERPATH/.Xresources $FILESPATH/backup/; fi
+	if [ -f $USERPATH/.xinitrc ]; then mv $USERPATH/.xinitrc $FILESPATH/backup/; fi
+	if [ -f $USERPATH/.vimrc ]; then mv $USERPATH/.vimrc $FILESPATH/backup/; fi
+	if [ -d $USERPATH/.vim ]; then mv $USERPATH/.vim $FILESPATH/backup/; fi
+	if [ -d $USERPATH/.config/i3 ]; then mv $USERPATH/.config/i3 $FILESPATH/backup/; fi
+	if [ -d $USERPATH/.i3 ]; then mv $USERPATH/.i3 $FILESPATH/backup/; fi
+fi
+
+ln -s $FILESPATH/bashrc $USERPATH/.bashrc
+ln -s $FILESPATH/Xresources $USERPATH/.Xresources
+ln -s $FILESPATH/xinitrc $USERPATH/.xinitrc
+ln -s $FILESPATH/vimrc $USERPATH/.vimrc
+ln -s $FILESPATH/vim $USERPATH/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $USERPATH/.vim/bundle/Vundle.vim && \
+	vim +PluginInstall +qall || \
+	echo "You must install git in order Vundle to be installed"
+
+if [ ! -d $USERPATH/.config ]; then mkdir $USERPATH/.config; fi
+ln -s $FILESPATH/config/i3 $USERPATH/.config/i3
