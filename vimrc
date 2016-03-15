@@ -1,5 +1,5 @@
 set encoding=utf-8
-colorscheme digerati
+colorscheme molokai_dark
 syntax on
 
 set nocompatible              " required
@@ -23,10 +23,15 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'bitc/vim-bad-whitespace'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2 |
