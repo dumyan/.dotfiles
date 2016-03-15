@@ -19,10 +19,11 @@ ln -s $FILESPATH/bashrc $USERPATH/.bashrc
 ln -s $FILESPATH/Xresources $USERPATH/.Xresources
 ln -s $FILESPATH/xinitrc $USERPATH/.xinitrc
 ln -s $FILESPATH/vimrc $USERPATH/.vimrc
-ln -s $FILESPATH/vim $USERPATH/.vim
+mkdir -p $USERPATH/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git $USERPATH/.vim/bundle/Vundle.vim && \
 	vim +PluginInstall +qall || \
 	echo "You must install git in order Vundle to be installed"
+ln -s $USERPATH/.vim/vundle/vim-colorschemes/colors $USERPATH/.vim/
 
 if [ ! -d $USERPATH/.config ]; then mkdir $USERPATH/.config; fi
 ln -s $FILESPATH/config/i3 $USERPATH/.config/i3
