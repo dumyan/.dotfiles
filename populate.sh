@@ -1,4 +1,4 @@
-FILESPATH=$HOME.dotfiles
+FILESPATH=$HOME/.dotfiles
 USERPATH=`realpath $HOME`
 
 

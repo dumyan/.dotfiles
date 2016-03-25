@@ -1,5 +1,5 @@
 !Rxvt.termName: xterm
-Rxvt.saveLines: 2000
+Rxvt.saveLines: 4000
 Rxvt.buffered: true
 Rxvt.geometry:  118x61
 Rxvt.scrollTtyOutput:  false
@@ -9,48 +9,56 @@ Rxvt.depth: 32
 !Font Options
 Xft.lcdfilter: lcddefault
 Xft.antialias:  True
-Xft.dpi:        96
+!Xft.dpi:        96
 Xft.hinting:    True
 Xft.hintstyle:  hintslight
 Xft.rgba:       rgb
 
-URxvt.font: xft:PragmataPro:Regular:size=10
+URxvt.font: xft:Input Mono:Thin:size=11:antialias=true
+URxvt.boldFont: xft:Input Mono:Medium:size=11:antialias=true
 !URxvt.boldFont:: xft:PragmataPro:Regular:size=11
 !URxvt.italicFont: xft:PragmataPro:Regular:size=11
+
+!vacuous2 theme
 
 !Scroll
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
 
 ! special
-*.foreground:   #ffffff
-*.background:   #000000
-*.cursorColor:  #ffffff
+*.foreground:   #d2c5bc
+*.background:   #101010
+*.cursorColor:  #d2c5bc
 
 ! black
-*.color0:       #303030
-*.color8:       #5f5f5f
+*.color0:       #202020
+*.color8:       #606060
 
 ! red
-*.color1:       #c03000
-*.color9:       #ff3a78
+*.color1:       #b91e2e
+*.color9:       #d14548
 
 ! green
-*.color2:       #b1d631
-*.color10:      #a6cd07
+*.color2:       #81957c
+*.color10:      #a7b79a
 
 ! yellow
-*.color3:       #fecf35
-*.color11:      #b5c865
+*.color3:       #f9bb80
+*.color11:      #fae3a0
 
 ! blue
-*.color4:       #426870
-*.color12:      #4a7781
+*.color4:       #356579
+*.color12:      #7491a1
 
 ! magenta
-*.color5:       #6d506d
-*.color13:      #ff3b77
+*.color5:       #2d2031
+*.color13:      #87314e
 
 ! cyan
-*.color6:       #4bb5c1
-*.color14:      #4bb5c1
+*.color6:       #0b3452
+*.color14:      #0f829d
+
+! white
+*.color7:       #909090
+*.color15:      #fff0f0
+
