@@ -1,0 +1,10 @@
+#/bin/bash
+
+STATE=$(xinput list-props 13 | grep 'Device Enabled' | cut -f3)
+
+if [ "$STATE" == "0" ]
+then
+	xinput enable 13
+else
+	xinput disable 13
+fi

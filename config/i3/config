@@ -164,3 +164,4 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +2
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume --up
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume --down
 bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume --togmute
+bindsym XF86TouchpadToggle exec --no-startup-id ~/.config/i3/scripts/touchpad_toggle
