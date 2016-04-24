@@ -1,10 +1,11 @@
 #/bin/bash
+TOUCHID="12"
 
-STATE=$(xinput list-props 13 | grep 'Device Enabled' | cut -f3)
+STATE=$(xinput list-props $TOUCHID | grep 'Device Enabled' | cut -f3)
 
 if [ "$STATE" == "0" ]
 then
-	xinput enable 13
+	xinput enable $TOUCHID
 else
-	xinput disable 13
+	xinput disable $TOUCHID
 fi
