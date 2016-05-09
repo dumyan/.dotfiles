@@ -4,4 +4,5 @@ ssh-agent &
 nitrogen --restore &
 xcompmgr &
 redshift-gtk -l 41.75:22.2 &
-nm-applet & 
+nm-applet &
+parcellite &
