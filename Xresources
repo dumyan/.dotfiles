@@ -19,46 +19,47 @@ URxvt.boldFont: xft:Input Mono:Medium:size=11:antialias=true
 !URxvt.boldFont:: xft:PragmataPro:Regular:size=11
 !URxvt.italicFont: xft:PragmataPro:Regular:size=11
 
-!vacuous2 theme
+urxvt*depth: 32
+urxvt*background rgba:0000/0000/0500/c800
 
 !Scroll
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
 
-! special
-*.foreground:   #d2c5bc
-*.background:   #101010
-*.cursorColor:  #d2c5bc
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
 
-! black
-*.color0:       #202020
-*.color8:       #606060
-
-! red
-*.color1:       #b91e2e
-*.color9:       #d14548
-
-! green
-*.color2:       #81957c
-*.color10:      #a7b79a
-
-! yellow
-*.color3:       #f9bb80
-*.color11:      #fae3a0
-
-! blue
-*.color4:       #356579
-*.color12:      #7491a1
-
-! magenta
-*.color5:       #2d2031
-*.color13:      #87314e
-
-! cyan
-*.color6:       #0b3452
-*.color14:      #0f829d
-
-! white
-*.color7:       #909090
-*.color15:      #fff0f0
-
+! hard contrast:
+*background: #1d2021
+! *background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
