@@ -1,5 +1,8 @@
 #/bin/bash
-TOUCHID="12"
+
+# Touchpad name can be found with calling xinput without any arguments.
+TOUCHPADNAME="AlpsPS/2 ALPS DualPoint TouchPad"
+TOUCHID=$(xinput list --id-only "$TOUCHPADNAME")
 
 STATE=$(xinput list-props $TOUCHID | grep 'Device Enabled' | cut -f3)
 
