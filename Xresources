@@ -19,8 +19,8 @@ URxvt.boldFont: xft:Input Mono:Medium:size=11:antialias=true
 !URxvt.boldFont:: xft:PragmataPro:Regular:size=11
 !URxvt.italicFont: xft:PragmataPro:Regular:size=11
 
-urxvt*depth: 32
-urxvt*background rgba:0000/0000/0500/c800
+urxvt*transparent: true
+urxvt*shading: 6
 
 !Scroll
 URxvt.scrollstyle: plain
@@ -37,7 +37,8 @@ URxvt.scrollBar_right: true
 ! hard contrast:
 *background: #1d2021
 ! *background: #282828
-! soft contrast: *background: #32302f
+! soft contrast:
+! *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
 *color0:  #282828
