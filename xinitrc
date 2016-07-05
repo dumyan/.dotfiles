@@ -1,5 +1,6 @@
 setxkbmap -layout us,mk -option grp:alt_shift_toggle
 
+xinput --set-prop 12 275 1 &
 ssh-agent &
 nitrogen --restore &
 xcompmgr &
